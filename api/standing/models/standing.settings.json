@@ -67,6 +67,9 @@
     "PT": {
       "type": "integer",
       "default": 0
+    },
+    "teamName": {
+      "type": "string"
     }
   }
 }

@@ -42,11 +42,7 @@
       "model": "team",
       "via": "roster"
     },
-    "externalRoster": {
-      "type": "boolean",
-      "default": false
-    },
-    "externalRosterURL": {
+    "Slug": {
       "type": "string"
     }
   }

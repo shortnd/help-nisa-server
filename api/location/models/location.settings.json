@@ -26,6 +26,9 @@
     "games": {
       "collection": "game",
       "via": "location"
+    },
+    "Slug": {
+      "type": "string"
     }
   }
 }
