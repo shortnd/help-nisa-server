@@ -9,12 +9,12 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Number": {
+    "number": {
       "type": "integer"
     },
     "position": {
@@ -42,7 +42,7 @@
       "model": "team",
       "via": "roster"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     }
   }

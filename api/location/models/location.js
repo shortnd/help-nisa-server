@@ -1,4 +1,5 @@
 'use strict';
+const slugify = require('slugify');
 
 /**
  * Lifecycle callbacks for the `location` model.
@@ -7,7 +8,11 @@
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  // beforeSave: async (model, attrs, options) => {},
+  beforeSave: async (model) => {
+    if (model.name) {
+      model.slug = slugify(model.name.toLowerCase())
+    }
+  },
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
@@ -39,7 +44,13 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model, attrs, options) => {},
+  beforeUpdate: async (model) => {
+    if (model.getUpdate() && model.getUpdate().name) {
+      model.update({
+        slug: slugify(model.name)
+      })
+    }
+  },
 
   // After updating a value.
   // Fired after an `update` query.

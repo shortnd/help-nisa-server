@@ -9,9 +9,10 @@ const slugify = require('slugify');
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  beforeSave: async (model) => {
+  beforeSave: async model => {
+    console.log(model)
     if (model.name) {
-      model.slug = slugify(model.name)
+      model.slug = slugify(model.name.toLowerCase())
     }
   },
 
@@ -46,9 +47,9 @@ module.exports = {
   // Before updating a value.
   // Fired before an `update` query.
   beforeUpdate: async model => {
-    if (model.getUpdate() && model.getUpdate().title) {
+    if (model.getUpdate() && model.getUpdate().name) {
       model.update({
-        slug: slugify(model.getUpdate().title)
+        slug: slugify(model.getUpdate().name.toLowerCase())
       })
     }
   },

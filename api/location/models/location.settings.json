@@ -27,7 +27,7 @@
       "collection": "game",
       "via": "location"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     }
   }
