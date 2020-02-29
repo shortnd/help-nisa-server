@@ -10,8 +10,8 @@
   },
   "attributes": {
     "team": {
-      "model": "team",
-      "via": "standing"
+      "via": "standing",
+      "model": "team"
     },
     "season": {
       "type": "enumeration",

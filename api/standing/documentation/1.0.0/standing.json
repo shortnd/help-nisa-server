@@ -526,14 +526,10 @@
           "team": {
             "required": [
               "id",
-              "name",
               "logo"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "name": {
                 "type": "string"
               },
               "logo": {
@@ -561,6 +557,9 @@
                 "type": "string"
               },
               "slug": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               }
             }

@@ -517,14 +517,10 @@
       "Team": {
         "required": [
           "id",
-          "name",
           "logo"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "name": {
             "type": "string"
           },
           "logo": {
@@ -698,17 +694,14 @@
           },
           "slug": {
             "type": "string"
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
       "NewTeam": {
-        "required": [
-          "name"
-        ],
         "properties": {
-          "name": {
-            "type": "string"
-          },
           "website": {
             "type": "string"
           },
@@ -731,6 +724,9 @@
             "type": "string"
           },
           "slug": {
+            "type": "string"
+          },
+          "name": {
             "type": "string"
           }
         }

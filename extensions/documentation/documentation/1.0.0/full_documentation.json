@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/29/2020 1:23:59 PM"
+    "x-generation-date": "02/29/2020 5:22:27 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4777,14 +4777,10 @@
           "home": {
             "required": [
               "id",
-              "name",
               "logo"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "name": {
                 "type": "string"
               },
               "logo": {
@@ -4812,6 +4808,9 @@
                 "type": "string"
               },
               "slug": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               }
             }
@@ -4819,14 +4818,10 @@
           "visitor": {
             "required": [
               "id",
-              "name",
               "logo"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "name": {
                 "type": "string"
               },
               "logo": {
@@ -4854,6 +4849,9 @@
                 "type": "string"
               },
               "slug": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               }
             }
@@ -5095,14 +5093,10 @@
           "team": {
             "required": [
               "id",
-              "name",
               "logo"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "name": {
                 "type": "string"
               },
               "logo": {
@@ -5130,6 +5124,9 @@
                 "type": "string"
               },
               "slug": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               }
             }
@@ -5248,14 +5245,10 @@
           "team": {
             "required": [
               "id",
-              "name",
               "logo"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "name": {
                 "type": "string"
               },
               "logo": {
@@ -5283,6 +5276,9 @@
                 "type": "string"
               },
               "slug": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               }
             }
@@ -5498,14 +5494,10 @@
       "Team": {
         "required": [
           "id",
-          "name",
           "logo"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "name": {
             "type": "string"
           },
           "logo": {
@@ -5679,17 +5671,14 @@
           },
           "slug": {
             "type": "string"
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
       "NewTeam": {
-        "required": [
-          "name"
-        ],
         "properties": {
-          "name": {
-            "type": "string"
-          },
           "website": {
             "type": "string"
           },
@@ -5712,6 +5701,9 @@
             "type": "string"
           },
           "slug": {
+            "type": "string"
+          },
+          "name": {
             "type": "string"
           }
         }

@@ -9,11 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "private": false,
-      "required": true
-    },
     "logo": {
       "model": "file",
       "via": "related",
@@ -35,10 +30,13 @@
       "via": "team"
     },
     "standing": {
-      "via": "team",
-      "model": "standing"
+      "model": "standing",
+      "via": "team"
     },
     "slug": {
+      "type": "string"
+    },
+    "name": {
       "type": "string"
     }
   }
