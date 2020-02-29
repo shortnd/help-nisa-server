@@ -28,16 +28,19 @@
       "type": "string"
     },
     "games": {
-      "via": "visitor",
-      "collection": "game"
+      "collection": "game",
+      "via": "visitor"
     },
     "roster": {
-      "via": "team",
-      "collection": "player"
+      "collection": "player",
+      "via": "team"
     },
     "standing": {
-      "via": "team",
-      "model": "standing"
+      "model": "standing",
+      "via": "team"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

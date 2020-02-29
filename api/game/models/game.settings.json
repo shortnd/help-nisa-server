@@ -23,8 +23,8 @@
       "via": "games"
     },
     "visitor": {
-      "model": "team",
-      "via": "games"
+      "via": "games",
+      "model": "team"
     },
     "location": {
       "via": "games",

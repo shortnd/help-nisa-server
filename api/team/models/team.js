@@ -1,5 +1,7 @@
 'use strict';
 
+const slugify = require('slugify');
+
 /**
  * Lifecycle callbacks for the `team` model.
  */
@@ -7,7 +9,11 @@
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  // beforeSave: async (model, attrs, options) => {},
+  beforeSave: async (model, attrs, options) => {
+    if (model.name) {
+      model.slug = slugify(model.name.toLowerCase())
+    }
+  },
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
@@ -39,7 +45,13 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model, attrs, options) => {},
+  beforeUpdate: async (model, attrs, options) => {
+    if (model.getUpdate() && model.getUpdate().name) {
+      model.update({
+        slug: slug(model.getUpdate().name.toLowerCase())
+      })
+    }
+  },
 
   // After updating a value.
   // Fired after an `update` query.

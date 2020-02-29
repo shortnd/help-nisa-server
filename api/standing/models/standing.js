@@ -1,5 +1,7 @@
 'use strict';
 
+const slugify = require('slugify');
+
 /**
  * Lifecycle callbacks for the `standing` model.
  */
@@ -7,7 +9,12 @@
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  // beforeSave: async (model, attrs, options) => {},
+  beforeSave: async model => {
+    if (model.team) {
+      const team = await strapi.query('team').findOne({ id: model.team })
+      model.teamName = team.name
+    }
+  },
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
@@ -39,7 +46,15 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model, attrs, options) => {},
+  beforeUpdate: async model => {
+    if (model.getUpdate() && model.getUpdate().team) {
+      const team = await strapi.query('team').findOne({ id: model.getUpdate().team })
+      model.update({
+        teamName: team.name
+      })
+      console.log({ name: team.name, model: model.teamName })
+    }
+  },
 
   // After updating a value.
   // Fired after an `update` query.

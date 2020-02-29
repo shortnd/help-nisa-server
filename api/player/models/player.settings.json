@@ -39,8 +39,8 @@
       "component": "photo-credit.photo-and-credit"
     },
     "team": {
-      "model": "team",
-      "via": "roster"
+      "via": "roster",
+      "model": "team"
     },
     "slug": {
       "type": "string"
