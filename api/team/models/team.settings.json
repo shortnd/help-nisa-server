@@ -12,7 +12,7 @@
     "name": {
       "type": "string",
       "private": false,
-      "required": true,
+      "required": true
     },
     "logo": {
       "model": "file",
