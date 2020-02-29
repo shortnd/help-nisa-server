@@ -10,8 +10,8 @@
   },
   "attributes": {
     "team": {
-      "via": "standing",
-      "model": "team"
+      "model": "team",
+      "via": "standing"
     },
     "season": {
       "type": "enumeration",
@@ -40,18 +40,6 @@
       "type": "integer",
       "default": 0
     },
-    "Home": {
-      "type": "integer",
-      "default": 0
-    },
-    "Away": {
-      "type": "integer",
-      "default": 0
-    },
-    "Latest": {
-      "type": "integer",
-      "default": 0
-    },
     "GF": {
       "type": "integer",
       "default": 0
@@ -70,6 +58,25 @@
     },
     "teamName": {
       "type": "string"
+    },
+    "HomeWDL": {
+      "type": "component",
+      "repeatable": false,
+      "component": "w-l-d.w-l-d"
+    },
+    "AwayHDL": {
+      "type": "component",
+      "repeatable": false,
+      "component": "w-l-d.w-l-d"
+    },
+    "Latest": {
+      "type": "enumeration",
+      "enum": [
+        "W",
+        "L",
+        "D"
+      ],
+      "required": false
     }
   }
 }

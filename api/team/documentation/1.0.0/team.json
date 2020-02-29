@@ -670,15 +670,6 @@
               "L": {
                 "type": "integer"
               },
-              "Home": {
-                "type": "integer"
-              },
-              "Away": {
-                "type": "integer"
-              },
-              "Latest": {
-                "type": "integer"
-              },
               "GF": {
                 "type": "integer"
               },
@@ -692,6 +683,15 @@
                 "type": "integer"
               },
               "teamName": {
+                "type": "string"
+              },
+              "HomeWDL": {
+                "type": "component"
+              },
+              "AwayHDL": {
+                "type": "component"
+              },
+              "Latest": {
                 "type": "string"
               }
             }

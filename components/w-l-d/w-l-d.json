@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "components_w_l_d_w_l_ds",
+  "info": {
+    "name": "W-L-D",
+    "icon": "exchange-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Win": {
+      "type": "integer",
+      "default": 0
+    },
+    "Loss": {
+      "type": "integer",
+      "default": 0
+    },
+    "Draw": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

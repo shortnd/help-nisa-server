@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/29/2020 12:15:25 AM"
+    "x-generation-date": "02/29/2020 1:23:59 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5312,18 +5312,6 @@
             "type": "integer",
             "default": 0
           },
-          "Home": {
-            "type": "integer",
-            "default": 0
-          },
-          "Away": {
-            "type": "integer",
-            "default": 0
-          },
-          "Latest": {
-            "type": "integer",
-            "default": 0
-          },
           "GF": {
             "type": "integer",
             "default": 0
@@ -5342,6 +5330,60 @@
           },
           "teamName": {
             "type": "string"
+          },
+          "HomeWDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayHDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "Latest": {
+            "type": "string",
+            "enum": [
+              "W",
+              "L",
+              "D"
+            ]
           }
         }
       },
@@ -5378,18 +5420,6 @@
             "type": "integer",
             "default": 0
           },
-          "Home": {
-            "type": "integer",
-            "default": 0
-          },
-          "Away": {
-            "type": "integer",
-            "default": 0
-          },
-          "Latest": {
-            "type": "integer",
-            "default": 0
-          },
           "GF": {
             "type": "integer",
             "default": 0
@@ -5408,6 +5438,60 @@
           },
           "teamName": {
             "type": "string"
+          },
+          "HomeWDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayHDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "Latest": {
+            "type": "string",
+            "enum": [
+              "W",
+              "L",
+              "D"
+            ]
           }
         }
       },
@@ -5567,15 +5651,6 @@
               "L": {
                 "type": "integer"
               },
-              "Home": {
-                "type": "integer"
-              },
-              "Away": {
-                "type": "integer"
-              },
-              "Latest": {
-                "type": "integer"
-              },
               "GF": {
                 "type": "integer"
               },
@@ -5589,6 +5664,15 @@
                 "type": "integer"
               },
               "teamName": {
+                "type": "string"
+              },
+              "HomeWDL": {
+                "type": "component"
+              },
+              "AwayHDL": {
+                "type": "component"
+              },
+              "Latest": {
                 "type": "string"
               }
             }

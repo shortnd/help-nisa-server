@@ -590,18 +590,6 @@
             "type": "integer",
             "default": 0
           },
-          "Home": {
-            "type": "integer",
-            "default": 0
-          },
-          "Away": {
-            "type": "integer",
-            "default": 0
-          },
-          "Latest": {
-            "type": "integer",
-            "default": 0
-          },
           "GF": {
             "type": "integer",
             "default": 0
@@ -620,6 +608,60 @@
           },
           "teamName": {
             "type": "string"
+          },
+          "HomeWDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayHDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "Latest": {
+            "type": "string",
+            "enum": [
+              "W",
+              "L",
+              "D"
+            ]
           }
         }
       },
@@ -656,18 +698,6 @@
             "type": "integer",
             "default": 0
           },
-          "Home": {
-            "type": "integer",
-            "default": 0
-          },
-          "Away": {
-            "type": "integer",
-            "default": 0
-          },
-          "Latest": {
-            "type": "integer",
-            "default": 0
-          },
           "GF": {
             "type": "integer",
             "default": 0
@@ -686,6 +716,60 @@
           },
           "teamName": {
             "type": "string"
+          },
+          "HomeWDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayHDL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Draw": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "Latest": {
+            "type": "string",
+            "enum": [
+              "W",
+              "L",
+              "D"
+            ]
           }
         }
       }
