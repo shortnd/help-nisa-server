@@ -75,7 +75,7 @@
     },
     "AwayWTL": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "w-t-l.w-l-d"
     }
   }

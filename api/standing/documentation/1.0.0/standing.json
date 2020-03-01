@@ -640,28 +640,25 @@
             }
           },
           "AwayWTL": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Win": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Loss": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Tie": {
-                  "type": "integer",
-                  "default": 0
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
               }
             }
           }
@@ -751,28 +748,25 @@
             }
           },
           "AwayWTL": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Win": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Loss": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Tie": {
-                  "type": "integer",
-                  "default": 0
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
               }
             }
           }

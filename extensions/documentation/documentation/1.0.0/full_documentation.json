@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/01/2020 11:33:04 AM"
+    "x-generation-date": "03/01/2020 11:39:02 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5359,28 +5359,25 @@
             }
           },
           "AwayWTL": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Win": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Loss": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Tie": {
-                  "type": "integer",
-                  "default": 0
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
               }
             }
           }
@@ -5470,28 +5467,25 @@
             }
           },
           "AwayWTL": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Win": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Loss": {
-                  "type": "integer",
-                  "default": 0
-                },
-                "Tie": {
-                  "type": "integer",
-                  "default": 0
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
               }
             }
           }
