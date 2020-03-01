@@ -63,8 +63,8 @@
       "type": "enumeration",
       "enum": [
         "W",
+        "T"
         "L",
-        "D"
       ],
       "required": false
     },
