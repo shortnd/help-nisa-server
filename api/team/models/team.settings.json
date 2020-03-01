@@ -30,8 +30,8 @@
       "via": "team"
     },
     "standing": {
-      "model": "standing",
-      "via": "team"
+      "via": "team",
+      "model": "standing"
     },
     "slug": {
       "type": "string"

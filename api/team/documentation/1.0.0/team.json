@@ -681,14 +681,14 @@
               "teamName": {
                 "type": "string"
               },
-              "HomeWDL": {
-                "type": "component"
-              },
-              "AwayHDL": {
-                "type": "component"
-              },
               "Latest": {
                 "type": "string"
+              },
+              "HomeWTL": {
+                "type": "component"
+              },
+              "AwayWTL": {
+                "type": "component"
               }
             }
           },

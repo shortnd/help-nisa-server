@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/01/2020 11:13:53 AM"
+    "x-generation-date": "03/01/2020 11:33:04 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5327,52 +5327,6 @@
           "teamName": {
             "type": "string"
           },
-          "HomeWDL": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Win": {
-                "type": "integer",
-                "default": 0
-              },
-              "Loss": {
-                "type": "integer",
-                "default": 0
-              },
-              "Tie": {
-                "type": "integer",
-                "default": 0
-              }
-            }
-          },
-          "AwayHDL": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Win": {
-                "type": "integer",
-                "default": 0
-              },
-              "Loss": {
-                "type": "integer",
-                "default": 0
-              },
-              "Tie": {
-                "type": "integer",
-                "default": 0
-              }
-            }
-          },
           "Latest": {
             "type": "string",
             "enum": [
@@ -5380,6 +5334,55 @@
               "L",
               "D"
             ]
+          },
+          "HomeWTL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayWTL": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Win": {
+                  "type": "integer",
+                  "default": 0
+                },
+                "Loss": {
+                  "type": "integer",
+                  "default": 0
+                },
+                "Tie": {
+                  "type": "integer",
+                  "default": 0
+                }
+              }
+            }
           }
         }
       },
@@ -5435,52 +5438,6 @@
           "teamName": {
             "type": "string"
           },
-          "HomeWDL": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Win": {
-                "type": "integer",
-                "default": 0
-              },
-              "Loss": {
-                "type": "integer",
-                "default": 0
-              },
-              "Tie": {
-                "type": "integer",
-                "default": 0
-              }
-            }
-          },
-          "AwayHDL": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Win": {
-                "type": "integer",
-                "default": 0
-              },
-              "Loss": {
-                "type": "integer",
-                "default": 0
-              },
-              "Tie": {
-                "type": "integer",
-                "default": 0
-              }
-            }
-          },
           "Latest": {
             "type": "string",
             "enum": [
@@ -5488,6 +5445,55 @@
               "L",
               "D"
             ]
+          },
+          "HomeWTL": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Win": {
+                "type": "integer",
+                "default": 0
+              },
+              "Loss": {
+                "type": "integer",
+                "default": 0
+              },
+              "Tie": {
+                "type": "integer",
+                "default": 0
+              }
+            }
+          },
+          "AwayWTL": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Win": {
+                  "type": "integer",
+                  "default": 0
+                },
+                "Loss": {
+                  "type": "integer",
+                  "default": 0
+                },
+                "Tie": {
+                  "type": "integer",
+                  "default": 0
+                }
+              }
+            }
           }
         }
       },
@@ -5658,14 +5664,14 @@
               "teamName": {
                 "type": "string"
               },
-              "HomeWDL": {
-                "type": "component"
-              },
-              "AwayHDL": {
-                "type": "component"
-              },
               "Latest": {
                 "type": "string"
+              },
+              "HomeWTL": {
+                "type": "component"
+              },
+              "AwayWTL": {
+                "type": "component"
               }
             }
           },

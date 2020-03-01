@@ -10,8 +10,8 @@
   },
   "attributes": {
     "team": {
-      "via": "standing",
-      "model": "team"
+      "model": "team",
+      "via": "standing"
     },
     "season": {
       "type": "enumeration",
@@ -59,16 +59,6 @@
     "teamName": {
       "type": "string"
     },
-    "HomeWDL": {
-      "type": "component",
-      "repeatable": false,
-      "component": "w-t-l.w-l-d"
-    },
-    "AwayHDL": {
-      "type": "component",
-      "repeatable": false,
-      "component": "w-t-l.w-l-d"
-    },
     "Latest": {
       "type": "enumeration",
       "enum": [
@@ -77,6 +67,16 @@
         "D"
       ],
       "required": false
+    },
+    "HomeWTL": {
+      "type": "component",
+      "repeatable": false,
+      "component": "w-t-l.w-l-d"
+    },
+    "AwayWTL": {
+      "type": "component",
+      "repeatable": true,
+      "component": "w-t-l.w-l-d"
     }
   }
 }
