@@ -48,7 +48,7 @@ module.exports = {
   beforeUpdate: async (model, attrs, options) => {
     if (model.getUpdate() && model.getUpdate().name) {
       model.update({
-        slug: slug(model.getUpdate().name.toLowerCase())
+        slug: slugify(model.getUpdate().name.toLowerCase())
       })
     }
   },
