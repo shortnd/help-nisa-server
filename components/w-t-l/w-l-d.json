@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "components_w_l_d_w_l_ds",
   "info": {
-    "name": "W-L-D",
+    "name": "W-T-L",
     "icon": "exchange-alt"
   },
   "options": {},
@@ -15,7 +15,7 @@
       "type": "integer",
       "default": 0
     },
-    "Draw": {
+    "Tie": {
       "type": "integer",
       "default": 0
     }

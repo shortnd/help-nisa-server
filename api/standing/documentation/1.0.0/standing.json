@@ -625,7 +625,7 @@
                 "type": "integer",
                 "default": 0
               },
-              "Draw": {
+              "Tie": {
                 "type": "integer",
                 "default": 0
               }
@@ -648,7 +648,7 @@
                 "type": "integer",
                 "default": 0
               },
-              "Draw": {
+              "Tie": {
                 "type": "integer",
                 "default": 0
               }
@@ -733,7 +733,7 @@
                 "type": "integer",
                 "default": 0
               },
-              "Draw": {
+              "Tie": {
                 "type": "integer",
                 "default": 0
               }
@@ -756,7 +756,7 @@
                 "type": "integer",
                 "default": 0
               },
-              "Draw": {
+              "Tie": {
                 "type": "integer",
                 "default": 0
               }

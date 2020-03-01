@@ -62,12 +62,12 @@
     "HomeWDL": {
       "type": "component",
       "repeatable": false,
-      "component": "w-l-d.w-l-d"
+      "component": "w-t-l.w-l-d"
     },
     "AwayHDL": {
       "type": "component",
       "repeatable": false,
-      "component": "w-l-d.w-l-d"
+      "component": "w-t-l.w-l-d"
     },
     "Latest": {
       "type": "enumeration",
