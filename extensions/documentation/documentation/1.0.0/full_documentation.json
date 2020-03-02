@@ -20,8 +20,7 @@
     "path": "/documentation",
     "showGeneratedFiles": true
   },
-  "servers": [
-    {
+  "servers": [{
       "url": "http://localhost:1337",
       "description": "Development server"
     },
@@ -30,7 +29,7 @@
       "description": "Staging server"
     },
     {
-      "url": "YOUR_PRODUCTION_SERVER",
+      "url": "nisa-helper-server.herokuapp.com",
       "description": "Production server"
     }
   ],
@@ -38,11 +37,9 @@
     "description": "Find out more",
     "url": "https://strapi.io/documentation/3.0.0-beta.x/"
   },
-  "security": [
-    {
-      "bearerAuth": []
-    }
-  ],
+  "security": [{
+    "bearerAuth": []
+  }],
   "paths": {
     "/games": {
       "get": {
@@ -97,8 +94,7 @@
         "tags": [
           "Game"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -405,18 +401,16 @@
         "tags": [
           "Game"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -478,18 +472,16 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -541,18 +533,16 @@
         "tags": [
           "Game"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/locations": {
@@ -608,8 +598,7 @@
         "tags": [
           "Location"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -916,18 +905,16 @@
         "tags": [
           "Location"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -989,18 +976,16 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -1052,18 +1037,16 @@
         "tags": [
           "Location"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/players": {
@@ -1119,8 +1102,7 @@
         "tags": [
           "Player"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -1427,18 +1409,16 @@
         "tags": [
           "Player"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -1500,18 +1480,16 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -1563,18 +1541,16 @@
         "tags": [
           "Player"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/standings": {
@@ -1630,8 +1606,7 @@
         "tags": [
           "Standing"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -1938,18 +1913,16 @@
         "tags": [
           "Standing"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -2011,18 +1984,16 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -2074,18 +2045,16 @@
         "tags": [
           "Standing"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/teams": {
@@ -2141,8 +2110,7 @@
         "tags": [
           "Team"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -2449,18 +2417,16 @@
         "tags": [
           "Team"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -2522,18 +2488,16 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -2585,18 +2549,16 @@
         "tags": [
           "Team"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/email/": {
@@ -2909,18 +2871,16 @@
         "tags": [
           "Upload - File"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "delete": {
         "deprecated": false,
@@ -2975,18 +2935,16 @@
         "tags": [
           "Upload - File"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/upload/search/{id}": {
@@ -3043,18 +3001,16 @@
         "tags": [
           "Upload - File"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/users-permissions/init": {
@@ -3164,18 +3120,16 @@
         "tags": [
           "Users-Permissions - Role"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/users-permissions/roles": {
@@ -3231,8 +3185,7 @@
         "tags": [
           "Users-Permissions - Role"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -3482,18 +3435,16 @@
         "tags": [
           "Users-Permissions - Role"
         ],
-        "parameters": [
-          {
-            "name": "role",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "role",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ],
+        }],
         "requestBody": {
           "description": "",
           "required": true,
@@ -3559,18 +3510,16 @@
         "tags": [
           "Users-Permissions - Role"
         ],
-        "parameters": [
-          {
-            "name": "role",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "role",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/users-permissions/search/{id}": {
@@ -3626,8 +3575,7 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "id",
             "in": "path",
             "description": "",
@@ -4021,18 +3969,16 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
-            "name": "provider",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "provider",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     },
     "/auth/forgot-password": {
@@ -4358,8 +4304,7 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
+        "parameters": [{
             "name": "_limit",
             "in": "query",
             "required": false,
@@ -4601,18 +4546,16 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       },
       "put": {
         "deprecated": false,
@@ -4663,18 +4606,16 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ],
+        }],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4740,18 +4681,16 @@
         "tags": [
           "Users-Permissions - User"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+        "parameters": [{
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ]
+        }]
       }
     }
   },
@@ -5956,8 +5895,7 @@
       }
     }
   },
-  "tags": [
-    {
+  "tags": [{
       "name": "Game"
     },
     {
